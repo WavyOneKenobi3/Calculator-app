@@ -1,4 +1,5 @@
 # Calculator
+operatior = { }
 def add(a, b):
     return a + b
         
@@ -13,11 +14,13 @@ def divide(a, b):
 def multi(a, b):
     return a * b
 
+num1 = int(input("First number? "))
+num2 = int(input("Second number? "))
+sign = input("Select +, -, /, or *: ")
+        
+
 def signal(num1, num2):
     try:                        #put all of this into a their functions
-        num1 = int(input("First number? "))
-        num2 = int(input("Second number? "))
-        sign = input("Select +, -, /, or *: ")
         if sign == "+":
             print(f"{num1} {sign} {num2} = {add(num1, num2)}")
         elif sign == "-":
