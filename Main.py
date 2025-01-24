@@ -23,7 +23,7 @@ operator = {
  }
 
 def calculator():
-    num1 = int(input("First number? "))
+    num1 = float(input("First number? "))
 
     for symbol in operator:
         print(symbol)
@@ -31,7 +31,7 @@ def calculator():
 
     while should_continue:
         sign = input("Select an Operator. ")
-        num2 = int(input("Second number? "))
+        num2 = float(input("Second number? "))
         calc_funciton = operator[sign]
         answer = calc_funciton(num1, num2)
         print(f"{num1} {sign} {num2} = {answer}")
